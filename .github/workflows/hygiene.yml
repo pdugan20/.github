@@ -4,7 +4,7 @@
 #
 #   jobs:
 #     hygiene:
-#       uses: pdugan20/.github/.github/workflows/hygiene.yml@<sha> # v1.0.0
+#       uses: pdugan20/.github/.github/workflows/hygiene.yml@<sha> # v1.1.0
 #
 # It runs actionlint, zizmor (medium severity and above), and Gitleaks over the
 # commits a pull request or push adds. Repository-local .github/zizmor.yml and
@@ -79,4 +79,4 @@ jobs:
             range="-1 $CURRENT_SHA"
           fi
           echo "Scanning commits: $range"
-          gitleaks git --no-banner --redact --log-opts="$range" .
+          gitleaks git --no-banner --redact --verbose --log-opts="$range" .

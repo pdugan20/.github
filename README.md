@@ -25,7 +25,7 @@ permissions:
 
 jobs:
   hygiene:
-    uses: pdugan20/.github/.github/workflows/hygiene.yml@<sha> # v1.0.0
+    uses: pdugan20/.github/.github/workflows/hygiene.yml@<sha> # v1.1.0
 ```
 
 Record exceptions in the calling repository's `.github/zizmor.yml` or
